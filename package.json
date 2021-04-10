@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node .",
-    "dev": "nodemon ."
+    "dev": "DEBUG=lab-cloudinary-uploads:* nodemon app.js",
+    "dev-windows": "nodemon app.js",
+    "start": "set ENV=dev && node app.js"
   },
   "author": "",
   "license": "ISC",
